@@ -1,0 +1,12 @@
+/target/
+/.idea/
+/build/
+*.iml
+/screen
+
+
+Test Results *.html
+
+.metadata
+node_modules
+/out/production/
