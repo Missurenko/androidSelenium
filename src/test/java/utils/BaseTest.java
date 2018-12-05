@@ -68,7 +68,7 @@ public abstract class BaseTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Dan");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        capabilities.setCapability(MobileCapabilityType.VERSION, "7.1.2");
+        capabilities.setCapability(MobileCapabilityType.VERSION, "9.0");
         capabilities.setCapability(AndroidMobileCapabilityType.NO_SIGN, "true");
         capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.prodege.swagbucksmobile");
         capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".sb.SplashSwagbucks");
@@ -76,8 +76,8 @@ public abstract class BaseTest {
         capabilities.setCapability("skipUnlock", "true");
         capabilities.setCapability("noReset", "false");
         capabilities.setCapability(MobileCapabilityType.APP, apkFile.getAbsolutePath());
-        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600); // server wait
-        capabilities.setCapability(MobileCapabilityType.UDID, "49e206a87ce5");
+        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 50); // server wait
+        capabilities.setCapability(MobileCapabilityType.UDID, "emulator-5554");
 //        log.info("before set Up");
 //        setupType.setUp(capabilities);
         log.info("Set configs");
